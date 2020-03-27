@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Mar 26 08:05:51 UTC 2020
+VLNV: xilinx.com:ip:fit_timer:2.0
+SynthRuntime: 31

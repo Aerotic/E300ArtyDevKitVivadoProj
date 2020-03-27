@@ -1,0 +1,682 @@
+{
+  "peripheral" : {
+    "displayName" : "deviceAt0x10000000",
+    "baseAddress" : "0x10000000",
+    "regfields" : [ {
+      "unnamedRegField80_0" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField84_0" : {
+        "byteOffset" : "0x84",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField88_0" : {
+        "byteOffset" : "0x88",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField8c_0" : {
+        "byteOffset" : "0x8c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField90_0" : {
+        "byteOffset" : "0x90",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField94_0" : {
+        "byteOffset" : "0x94",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField98_0" : {
+        "byteOffset" : "0x98",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField9c_0" : {
+        "byteOffset" : "0x9c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFielda0_0" : {
+        "byteOffset" : "0xa0",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFielda4_0" : {
+        "byteOffset" : "0xa4",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFielda8_0" : {
+        "byteOffset" : "0xa8",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFieldac_0" : {
+        "byteOffset" : "0xac",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFieldb0_0" : {
+        "byteOffset" : "0xb0",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFieldb4_0" : {
+        "byteOffset" : "0xb4",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFieldb8_0" : {
+        "byteOffset" : "0xb8",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegFieldbc_0" : {
+        "byteOffset" : "0xbc",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "wdogscale" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 0,
+        "bitWidth" : 4,
+        "name" : "wdogscale",
+        "description" : "Counter scale value.",
+        "group" : "wdogcfg",
+        "groupDesc" : "wdog Configuration",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 4,
+        "bitWidth" : 4,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "wdogrsten" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 8,
+        "bitWidth" : 1,
+        "name" : "wdogrsten",
+        "description" : "Controls whether the comparator output can set the wdogrst bit and hence cause a full reset.",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "wdogzerocmp" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 9,
+        "bitWidth" : 1,
+        "name" : "wdogzerocmp",
+        "description" : "Reset counter to zero after match.",
+        "group" : "wdogcfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 10,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 11,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "wdogenalways" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 12,
+        "bitWidth" : 1,
+        "name" : "wdogenalways",
+        "description" : "Enable Always - run continuously",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "wdogcoreawake" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 13,
+        "bitWidth" : 1,
+        "name" : "wdogcoreawake",
+        "description" : "Increment the watchdog counter if the processor is not asleep",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 14,
+        "bitWidth" : 2,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 16,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 17,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 20,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 21,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 24,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 25,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "wdogip0" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 28,
+        "bitWidth" : 1,
+        "name" : "wdogip0",
+        "description" : "Interrupt 0 Pending",
+        "group" : "wdogcfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x0",
+        "bitOffset" : 29,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "wdogcfg",
+        "accessType" : "R"
+      }
+    }, {
+      "wdogcount" : {
+        "byteOffset" : "0x8",
+        "bitOffset" : 0,
+        "bitWidth" : 31,
+        "name" : "wdogcount",
+        "description" : "Counter Register",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0xc",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "accessType" : "R"
+      }
+    }, {
+      "wdogs" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 0,
+        "bitWidth" : 16,
+        "name" : "wdogs",
+        "description" : "Scaled value of Counter",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "wdogfeed" : {
+        "byteOffset" : "0x18",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "wdogfeed",
+        "description" : "Feed register",
+        "accessType" : "RW"
+      }
+    }, {
+      "wdogkey" : {
+        "byteOffset" : "0x1c",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "wdogkey",
+        "description" : "Key Register",
+        "accessType" : "RW"
+      }
+    }, {
+      "wdogcmp0" : {
+        "byteOffset" : "0x20",
+        "bitOffset" : 0,
+        "bitWidth" : 16,
+        "name" : "wdogcmp0",
+        "description" : "Comparator 0",
+        "accessType" : "RW"
+      }
+    }, {
+      "rtcscale" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 0,
+        "bitWidth" : 4,
+        "name" : "rtcscale",
+        "description" : "Counter scale value.",
+        "group" : "rtccfg",
+        "groupDesc" : "rtc Configuration",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 4,
+        "bitWidth" : 4,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 8,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 9,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 10,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 11,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "rtcenalways" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 12,
+        "bitWidth" : 1,
+        "name" : "rtcenalways",
+        "description" : "Enable Always - run continuously",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 13,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 14,
+        "bitWidth" : 2,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 16,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 17,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 20,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 21,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 24,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 25,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "rtcip0" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 28,
+        "bitWidth" : 1,
+        "name" : "rtcip0",
+        "description" : "Interrupt 0 Pending",
+        "group" : "rtccfg",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 29,
+        "bitWidth" : 3,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "group" : "rtccfg",
+        "accessType" : "R"
+      }
+    }, {
+      "rtccountlo" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "rtccountlo",
+        "description" : "Low bits of Counter",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "rtccounthi" : {
+        "byteOffset" : "0x4c",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "rtccounthi",
+        "description" : "High bits of Counter",
+        "accessType" : "RW",
+        "volatile" : true
+      }
+    }, {
+      "rtcs" : {
+        "byteOffset" : "0x50",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "rtcs",
+        "description" : "Scaled value of Counter",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "accessType" : "R"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x5c",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "accessType" : "R"
+      }
+    }, {
+      "rtccmp0" : {
+        "byteOffset" : "0x60",
+        "bitOffset" : 0,
+        "bitWidth" : 32,
+        "name" : "rtccmp0",
+        "description" : "Comparator 0",
+        "accessType" : "RW"
+      }
+    }, {
+      "unnamedRegField100_0" : {
+        "byteOffset" : "0x100",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField104_0" : {
+        "byteOffset" : "0x104",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField108_0" : {
+        "byteOffset" : "0x108",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField10c_0" : {
+        "byteOffset" : "0x10c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField110_0" : {
+        "byteOffset" : "0x110",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField114_0" : {
+        "byteOffset" : "0x114",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField118_0" : {
+        "byteOffset" : "0x118",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField11c_0" : {
+        "byteOffset" : "0x11c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField120_0" : {
+        "byteOffset" : "0x120",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField124_0" : {
+        "byteOffset" : "0x124",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField128_0" : {
+        "byteOffset" : "0x128",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField12c_0" : {
+        "byteOffset" : "0x12c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField130_0" : {
+        "byteOffset" : "0x130",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField134_0" : {
+        "byteOffset" : "0x134",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField138_0" : {
+        "byteOffset" : "0x138",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField13c_0" : {
+        "byteOffset" : "0x13c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField140_0" : {
+        "byteOffset" : "0x140",
+        "bitOffset" : 0,
+        "bitWidth" : 4
+      }
+    }, {
+      "unnamedRegField144_0" : {
+        "byteOffset" : "0x144",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField148_0" : {
+        "byteOffset" : "0x148",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    }, {
+      "unnamedRegField14c_0" : {
+        "byteOffset" : "0x14c",
+        "bitOffset" : 0,
+        "bitWidth" : 32
+      }
+    } ]
+  }
+}

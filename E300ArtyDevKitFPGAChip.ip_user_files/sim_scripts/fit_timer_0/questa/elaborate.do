@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L xil_defaultlib -L xpm -L fit_timer_v2_0_8 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.fit_timer_0 xil_defaultlib.glbl -o fit_timer_0_opt

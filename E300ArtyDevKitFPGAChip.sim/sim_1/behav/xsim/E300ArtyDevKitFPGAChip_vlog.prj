@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../obj/ip/mmcm" \
+"../../../../obj/ip/mmcm/mmcm_clk_wiz.v" \
+"../../../../obj/ip/mmcm/mmcm.v" \
+"../../../../sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.rom.v" \
+"../../../../sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1184 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date             : Fri Mar 27 16:13:14 2020
+| Host             : rv running 64-bit Ubuntu 16.04.5 LTS
+| Command          : report_power -file E300ArtyDevKitFPGAChip_power_routed.rpt -pb E300ArtyDevKitFPGAChip_power_summary_routed.pb -rpx E300ArtyDevKitFPGAChip_power_routed.rpx
+| Design           : E300ArtyDevKitFPGAChip
+| Device           : xc7a35ticsg324-1L
+| Design State     : routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.210        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.148        |
+| Device Static (W)        | 0.062        |
+| Effective TJA (C/W)      | 4.8          |
+| Max Ambient (C)          | 99.0         |
+| Junction Temperature (C) | 26.0         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.008 |       12 |       --- |             --- |
+| Slice Logic              |     0.009 |    26924 |       --- |             --- |
+|   LUT as Logic           |     0.008 |    13213 |     20800 |           63.52 |
+|   LUT as Distributed RAM |    <0.001 |      648 |      9600 |            6.75 |
+|   CARRY4                 |    <0.001 |      599 |      8150 |            7.35 |
+|   Register               |    <0.001 |     7923 |     41600 |           19.05 |
+|   LUT as Shift Register  |    <0.001 |       65 |      9600 |            0.68 |
+|   F7/F8 Muxes            |    <0.001 |      605 |     32600 |            1.86 |
+|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
+|   Others                 |     0.000 |      623 |       --- |             --- |
+| Signals                  |     0.011 |    20712 |       --- |             --- |
+| Block RAM                |     0.004 |      5.5 |        50 |           11.00 |
+| MMCM                     |     0.097 |        1 |         5 |           20.00 |
+| DSPs                     |    <0.001 |        2 |        90 |            2.22 |
+| I/O                      |     0.019 |       57 |       210 |           27.14 |
+| Static Power             |     0.062 |          |           |                 |
+| Total                    |     0.210 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       0.950 |     0.040 |       0.034 |      0.006 |
+| Vccaux    |       1.800 |     0.066 |       0.054 |      0.011 |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       0.950 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.018 |       0.000 |      0.018 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------+----------------------------+-----------------+
+| Clock           | Domain                     | Constraint (ns) |
++-----------------+----------------------------+-----------------+
+| CLK100MHZ       | CLK100MHZ                  |            10.0 |
+| JTCK            | IOBUF_6/IO                 |           100.0 |
+| clk_out1_mmcm   | ip_mmcm/inst/clk_out1_mmcm |           119.2 |
+| clk_out1_mmcm_1 | ip_mmcm/inst/clk_out1_mmcm |           119.2 |
+| clk_out3_mmcm   | ip_mmcm/inst/clk_out3_mmcm |            31.0 |
+| clk_out3_mmcm_1 | ip_mmcm/inst/clk_out3_mmcm |            31.0 |
+| clkfbout_mmcm   | ip_mmcm/inst/clkfbout_mmcm |            30.0 |
+| clkfbout_mmcm_1 | ip_mmcm/inst/clkfbout_mmcm |            30.0 |
+| qspi_sck_pin    | IOBUF/IO                   |            20.0 |
+| sys_clk_pin     | CLK100MHZ                  |            10.0 |
++-----------------+----------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------------------+-----------+
+| Name                                                | Power (W) |
++-----------------------------------------------------+-----------+
+| E300ArtyDevKitFPGAChip                              |     0.148 |
+|   E300ArtyDevKitPlatform                            |     0.032 |
+|     ResetCatchAndSync_d20                           |    <0.001 |
+|       AsyncResetSynchronizerShiftReg_w1_d20_i0      |    <0.001 |
+|         sync_0                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_1                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_10                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_11                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_12                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_13                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_14                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_15                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_16                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_17                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_18                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_19                                     |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_2                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_3                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_4                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_5                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_6                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_7                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_8                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|         sync_9                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|     spi_dq_0_sync                                   |    <0.001 |
+|     spi_dq_1_sync                                   |    <0.001 |
+|     spi_dq_2_sync                                   |    <0.001 |
+|     spi_dq_3_sync                                   |    <0.001 |
+|     sys                                             |     0.032 |
+|       aon_1                                         |     0.001 |
+|         ResetCatchAndSync_d3                        |    <0.001 |
+|           AsyncResetSynchronizerShiftReg_w1_d3_i0   |    <0.001 |
+|             sync_0                                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             sync_1                                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             sync_2                                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|         aon                                         |     0.001 |
+|           Queue                                     |    <0.001 |
+|           pmu                                       |    <0.001 |
+|             AsyncResetRegVec_w5_i0                  |    <0.001 |
+|               reg_3                                 |    <0.001 |
+|             SRLatch_1                               |     0.000 |
+|             SRLatch_2                               |    <0.001 |
+|             core                                    |    <0.001 |
+|           rtc                                       |    <0.001 |
+|             AsyncResetRegVec_w1_i0                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|           wdog                                      |    <0.001 |
+|             AsyncResetRegVec_w1_i0                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             AsyncResetRegVec_w1_i0_1                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             AsyncResetRegVec_w1_i0_2                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             AsyncResetRegVec_w1_i0_3                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             AsyncResetRegVec_w1_i0_4                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|         aonrst_catch                                |    <0.001 |
+|           AsyncResetSynchronizerShiftReg_w1_d3_i0   |    <0.001 |
+|             sync_0                                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             sync_1                                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             sync_2                                  |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|         crossing                                    |    <0.001 |
+|           AsyncQueueSink                            |    <0.001 |
+|             deq_bits_reg                            |    <0.001 |
+|             ridx_bin                                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             valid_reg                               |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             widx_gray                               |    <0.001 |
+|               sync_0                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_1                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_2                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|           AsyncQueueSource                          |    <0.001 |
+|             AsyncValidSync                          |    <0.001 |
+|               source_valid                          |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_1                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_2                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_3                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|             AsyncValidSync_1                        |    <0.001 |
+|               sink_extend                           |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|             AsyncValidSync_2                        |    <0.001 |
+|               sink_valid                            |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_1                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_2                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|             ready_reg                               |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             ridx_gray                               |    <0.001 |
+|               sync_0                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_1                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_2                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|             widx_bin                                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|         dwakeup_deglitch                            |     0.000 |
+|       asyncXing                                     |    <0.001 |
+|         SynchronizerShiftReg_w1_d3                  |    <0.001 |
+|       asyncXing_1                                   |    <0.001 |
+|         SynchronizerShiftReg_w1_d3                  |    <0.001 |
+|       asyncXing_2                                   |    <0.001 |
+|         SynchronizerShiftReg_w1_d3                  |    <0.001 |
+|       asyncXing_3                                   |    <0.001 |
+|         SynchronizerShiftReg_w1_d3                  |    <0.001 |
+|       asyncXing_4                                   |    <0.001 |
+|         SynchronizerShiftReg_w1_d3                  |    <0.001 |
+|       asyncXing_5                                   |    <0.001 |
+|         SynchronizerShiftReg_w32_d3                 |    <0.001 |
+|       asyncXing_6                                   |    <0.001 |
+|         SynchronizerShiftReg_w4_d3                  |    <0.001 |
+|       asyncXing_7                                   |    <0.001 |
+|         SynchronizerShiftReg_w4_d3                  |    <0.001 |
+|       asyncXing_8                                   |    <0.001 |
+|         SynchronizerShiftReg_w4_d3                  |    <0.001 |
+|       asyncXing_9                                   |    <0.001 |
+|         SynchronizerShiftReg_w1_d3                  |    <0.001 |
+|       clint                                         |    <0.001 |
+|       debug_1                                       |     0.001 |
+|         dmInner                                     |     0.001 |
+|           AsyncQueueSink                            |    <0.001 |
+|             deq_bits_reg                            |    <0.001 |
+|             ridx_bin                                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             valid_reg                               |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             widx_gray                               |    <0.001 |
+|               sync_0                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_1                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_2                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|           dmInner                                   |     0.001 |
+|           dmactiveSync                              |    <0.001 |
+|             AsyncResetSynchronizerShiftReg_w1_d3_i0 |    <0.001 |
+|               sync_0                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_1                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_2                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|           dmiXing                                   |    <0.001 |
+|             AsyncQueueSink                          |    <0.001 |
+|               deq_bits_reg                          |    <0.001 |
+|               ridx_bin                              |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               valid_reg                             |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               widx_gray                             |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_1                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_2                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|             AsyncQueueSource                        |    <0.001 |
+|               AsyncValidSync                        |    <0.001 |
+|                 source_valid                        |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_1                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_2                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_3                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               AsyncValidSync_1                      |    <0.001 |
+|                 sink_extend                         |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               AsyncValidSync_2                      |    <0.001 |
+|                 sink_valid                          |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_1                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_2                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               ready_reg                             |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               ridx_gray                             |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_1                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_2                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|               widx_bin                              |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|         dmOuter                                     |    <0.001 |
+|           AsyncQueueSource                          |    <0.001 |
+|             ready_reg                               |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|             ridx_gray                               |    <0.001 |
+|               sync_0                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_1                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               sync_2                                |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|             widx_bin                                |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|           asource                                   |    <0.001 |
+|             AsyncQueueSink                          |    <0.001 |
+|               AsyncValidSync                        |    <0.001 |
+|                 source_valid                        |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_1                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_2                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_3                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               AsyncValidSync_1                      |    <0.001 |
+|                 sink_extend                         |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               AsyncValidSync_2                      |    <0.001 |
+|                 sink_valid                          |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_1                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_2                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               deq_bits_reg                          |    <0.001 |
+|               ridx_bin                              |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               valid_reg                             |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               widx_gray                             |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_1                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_2                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|             AsyncQueueSource                        |    <0.001 |
+|               ready_reg                             |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|               ridx_gray                             |    <0.001 |
+|                 sync_0                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_1                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 sync_2                              |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|               widx_bin                              |    <0.001 |
+|                 reg_0                               |    <0.001 |
+|           dmOuter                                   |    <0.001 |
+|             DMCONTROL                               |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|               reg_1                                 |    <0.001 |
+|               reg_16                                |    <0.001 |
+|               reg_17                                |    <0.001 |
+|               reg_18                                |    <0.001 |
+|               reg_19                                |    <0.001 |
+|               reg_20                                |    <0.001 |
+|               reg_21                                |    <0.001 |
+|               reg_22                                |    <0.001 |
+|               reg_23                                |    <0.001 |
+|               reg_24                                |    <0.001 |
+|               reg_25                                |    <0.001 |
+|               reg_28                                |    <0.001 |
+|               reg_30                                |    <0.001 |
+|               reg_31                                |    <0.001 |
+|             debugInterrupts                         |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|           dmiXbar                                   |    <0.001 |
+|       dmiResetCatch                                 |    <0.001 |
+|         AsyncResetSynchronizerShiftReg_w1_d3_i0     |    <0.001 |
+|           sync_0                                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|           sync_1                                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|           sync_2                                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|       dtm                                           |    <0.001 |
+|         JtagBypassChain                             |    <0.001 |
+|         JtagTapController                           |    <0.001 |
+|           irChain                                   |    <0.001 |
+|           stateMachine                              |    <0.001 |
+|             currStateReg                            |    <0.001 |
+|               reg_0                                 |    <0.001 |
+|               reg_1                                 |    <0.001 |
+|               reg_2                                 |    <0.001 |
+|               reg_3                                 |    <0.001 |
+|         dmiAccessChain                              |    <0.001 |
+|         dtmInfoChain                                |    <0.001 |
+|         idcodeChain                                 |    <0.001 |
+|       gpio_0_1                                      |    <0.001 |
+|         ieReg                                       |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|           reg_1                                     |    <0.001 |
+|           reg_10                                    |    <0.001 |
+|           reg_11                                    |    <0.001 |
+|           reg_12                                    |    <0.001 |
+|           reg_13                                    |    <0.001 |
+|           reg_14                                    |    <0.001 |
+|           reg_15                                    |    <0.001 |
+|           reg_16                                    |    <0.001 |
+|           reg_17                                    |    <0.001 |
+|           reg_18                                    |    <0.001 |
+|           reg_19                                    |    <0.001 |
+|           reg_2                                     |    <0.001 |
+|           reg_20                                    |    <0.001 |
+|           reg_21                                    |    <0.001 |
+|           reg_22                                    |    <0.001 |
+|           reg_23                                    |    <0.001 |
+|           reg_24                                    |    <0.001 |
+|           reg_25                                    |    <0.001 |
+|           reg_26                                    |    <0.001 |
+|           reg_27                                    |    <0.001 |
+|           reg_28                                    |    <0.001 |
+|           reg_29                                    |    <0.001 |
+|           reg_3                                     |    <0.001 |
+|           reg_30                                    |    <0.001 |
+|           reg_31                                    |    <0.001 |
+|           reg_4                                     |    <0.001 |
+|           reg_5                                     |    <0.001 |
+|           reg_6                                     |    <0.001 |
+|           reg_7                                     |    <0.001 |
+|           reg_8                                     |    <0.001 |
+|           reg_9                                     |    <0.001 |
+|         inSyncReg                                   |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w32_i0                   |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|             reg_1                                   |    <0.001 |
+|             reg_10                                  |    <0.001 |
+|             reg_11                                  |    <0.001 |
+|             reg_12                                  |    <0.001 |
+|             reg_13                                  |    <0.001 |
+|             reg_14                                  |    <0.001 |
+|             reg_15                                  |    <0.001 |
+|             reg_16                                  |    <0.001 |
+|             reg_17                                  |    <0.001 |
+|             reg_18                                  |    <0.001 |
+|             reg_19                                  |    <0.001 |
+|             reg_2                                   |    <0.001 |
+|             reg_20                                  |    <0.001 |
+|             reg_21                                  |    <0.001 |
+|             reg_22                                  |    <0.001 |
+|             reg_23                                  |    <0.001 |
+|             reg_24                                  |    <0.001 |
+|             reg_25                                  |    <0.001 |
+|             reg_26                                  |    <0.001 |
+|             reg_27                                  |    <0.001 |
+|             reg_28                                  |    <0.001 |
+|             reg_29                                  |    <0.001 |
+|             reg_3                                   |    <0.001 |
+|             reg_30                                  |    <0.001 |
+|             reg_31                                  |    <0.001 |
+|             reg_4                                   |    <0.001 |
+|             reg_5                                   |    <0.001 |
+|             reg_6                                   |    <0.001 |
+|             reg_7                                   |    <0.001 |
+|             reg_8                                   |    <0.001 |
+|             reg_9                                   |    <0.001 |
+|         iofEnReg                                    |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|           reg_1                                     |    <0.001 |
+|           reg_10                                    |    <0.001 |
+|           reg_11                                    |    <0.001 |
+|           reg_12                                    |    <0.001 |
+|           reg_13                                    |    <0.001 |
+|           reg_14                                    |    <0.001 |
+|           reg_15                                    |    <0.001 |
+|           reg_16                                    |    <0.001 |
+|           reg_17                                    |    <0.001 |
+|           reg_18                                    |    <0.001 |
+|           reg_19                                    |    <0.001 |
+|           reg_2                                     |    <0.001 |
+|           reg_20                                    |    <0.001 |
+|           reg_21                                    |    <0.001 |
+|           reg_22                                    |    <0.001 |
+|           reg_23                                    |    <0.001 |
+|           reg_24                                    |    <0.001 |
+|           reg_25                                    |    <0.001 |
+|           reg_26                                    |    <0.001 |
+|           reg_27                                    |    <0.001 |
+|           reg_28                                    |    <0.001 |
+|           reg_29                                    |    <0.001 |
+|           reg_3                                     |    <0.001 |
+|           reg_30                                    |    <0.001 |
+|           reg_31                                    |    <0.001 |
+|           reg_4                                     |    <0.001 |
+|           reg_5                                     |    <0.001 |
+|           reg_6                                     |    <0.001 |
+|           reg_7                                     |    <0.001 |
+|           reg_8                                     |    <0.001 |
+|           reg_9                                     |    <0.001 |
+|         oeReg                                       |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|           reg_1                                     |    <0.001 |
+|           reg_10                                    |    <0.001 |
+|           reg_11                                    |    <0.001 |
+|           reg_12                                    |    <0.001 |
+|           reg_13                                    |    <0.001 |
+|           reg_14                                    |    <0.001 |
+|           reg_15                                    |    <0.001 |
+|           reg_16                                    |    <0.001 |
+|           reg_17                                    |    <0.001 |
+|           reg_18                                    |    <0.001 |
+|           reg_19                                    |    <0.001 |
+|           reg_2                                     |    <0.001 |
+|           reg_20                                    |    <0.001 |
+|           reg_21                                    |    <0.001 |
+|           reg_22                                    |    <0.001 |
+|           reg_23                                    |    <0.001 |
+|           reg_24                                    |    <0.001 |
+|           reg_25                                    |    <0.001 |
+|           reg_26                                    |    <0.001 |
+|           reg_27                                    |    <0.001 |
+|           reg_28                                    |    <0.001 |
+|           reg_29                                    |    <0.001 |
+|           reg_3                                     |    <0.001 |
+|           reg_30                                    |    <0.001 |
+|           reg_31                                    |    <0.001 |
+|           reg_4                                     |    <0.001 |
+|           reg_5                                     |    <0.001 |
+|           reg_6                                     |    <0.001 |
+|           reg_7                                     |    <0.001 |
+|           reg_8                                     |    <0.001 |
+|           reg_9                                     |    <0.001 |
+|         pueReg                                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|           reg_1                                     |    <0.001 |
+|           reg_10                                    |    <0.001 |
+|           reg_11                                    |    <0.001 |
+|           reg_12                                    |    <0.001 |
+|           reg_13                                    |    <0.001 |
+|           reg_14                                    |    <0.001 |
+|           reg_15                                    |    <0.001 |
+|           reg_16                                    |    <0.001 |
+|           reg_17                                    |    <0.001 |
+|           reg_18                                    |    <0.001 |
+|           reg_19                                    |    <0.001 |
+|           reg_2                                     |    <0.001 |
+|           reg_20                                    |    <0.001 |
+|           reg_21                                    |    <0.001 |
+|           reg_22                                    |    <0.001 |
+|           reg_23                                    |    <0.001 |
+|           reg_24                                    |    <0.001 |
+|           reg_25                                    |    <0.001 |
+|           reg_26                                    |    <0.001 |
+|           reg_27                                    |    <0.001 |
+|           reg_28                                    |    <0.001 |
+|           reg_29                                    |    <0.001 |
+|           reg_3                                     |    <0.001 |
+|           reg_30                                    |    <0.001 |
+|           reg_31                                    |    <0.001 |
+|           reg_4                                     |    <0.001 |
+|           reg_5                                     |    <0.001 |
+|           reg_6                                     |    <0.001 |
+|           reg_7                                     |    <0.001 |
+|           reg_8                                     |    <0.001 |
+|           reg_9                                     |    <0.001 |
+|       i2c_0_1                                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w1_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|       intsink_1                                     |    <0.001 |
+|         SynchronizerShiftReg_w2_d3                  |    <0.001 |
+|       intsource                                     |    <0.001 |
+|         AsyncResetRegVec_w2_i0                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|           reg_1                                     |    <0.001 |
+|       intsource_1                                   |    <0.001 |
+|         AsyncResetRegVec_w1_i0                      |    <0.001 |
+|           reg_0                                     |    <0.001 |
+|       maskROM                                       |    <0.001 |
+|       pbus                                          |     0.003 |
+|         atomics                                     |    <0.001 |
+|         buffer                                      |     0.001 |
+|           Queue                                     |    <0.001 |
+|             _T_35_address_reg_0_1_0_5               |    <0.001 |
+|             _T_35_address_reg_0_1_12_17             |    <0.001 |
+|             _T_35_address_reg_0_1_18_23             |    <0.001 |
+|             _T_35_address_reg_0_1_24_29             |    <0.001 |
+|             _T_35_address_reg_0_1_6_11              |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_mask_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_size_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|           Queue_1                                   |    <0.001 |
+|             _T_35_corrupt_reg_0_1_0_0               |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_denied_reg_0_1_0_0                |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_size_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|         buffer_1                                    |    <0.001 |
+|           Queue                                     |    <0.001 |
+|             _T_35_address_reg_0_1_0_5               |    <0.001 |
+|             _T_35_address_reg_0_1_12_17             |    <0.001 |
+|             _T_35_address_reg_0_1_18_23             |    <0.001 |
+|             _T_35_address_reg_0_1_24_29             |    <0.001 |
+|             _T_35_address_reg_0_1_6_11              |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_mask_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_param_reg_0_1_0_2                 |    <0.001 |
+|             _T_35_size_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|           Queue_1                                   |    <0.001 |
+|             _T_35_corrupt_reg_0_1_0_0               |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_denied_reg_0_1_0_0                |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_size_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|         coupler_to_device_named_gpio_0              |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_i2c_0               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_pwm_0               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_pwm_1               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_pwm_2               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_qspi_0              |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_spi_0               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_device_named_spi_1               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_mem_named_qspi_0                 |    <0.001 |
+|           buffer                                    |    <0.001 |
+|             Queue                                   |    <0.001 |
+|               _T_35_address_reg_0_7_0_5             |    <0.001 |
+|               _T_35_address_reg_0_7_12_17           |    <0.001 |
+|               _T_35_address_reg_0_7_18_23           |    <0.001 |
+|               _T_35_address_reg_0_7_24_29           |    <0.001 |
+|               _T_35_address_reg_0_7_6_11            |    <0.001 |
+|               _T_35_size_reg_0_7_0_2                |    <0.001 |
+|               _T_35_source_reg_0_7_0_0              |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|           widget                                    |    <0.001 |
+|         coupler_to_slave_named_uart_0               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         coupler_to_slave_named_uart_1               |    <0.001 |
+|           fragmenter                                |    <0.001 |
+|             Repeater                                |    <0.001 |
+|         out_xbar                                    |    <0.001 |
+|         wrapped_error_device                        |    <0.001 |
+|           error                                     |    <0.001 |
+|             a                                       |    <0.001 |
+|       plic                                          |    <0.001 |
+|         LevelGateway                                |    <0.001 |
+|         LevelGateway_1                              |    <0.001 |
+|         LevelGateway_10                             |    <0.001 |
+|         LevelGateway_11                             |    <0.001 |
+|         LevelGateway_12                             |    <0.001 |
+|         LevelGateway_13                             |    <0.001 |
+|         LevelGateway_14                             |    <0.001 |
+|         LevelGateway_15                             |    <0.001 |
+|         LevelGateway_16                             |    <0.001 |
+|         LevelGateway_17                             |    <0.001 |
+|         LevelGateway_18                             |    <0.001 |
+|         LevelGateway_19                             |    <0.001 |
+|         LevelGateway_2                              |    <0.001 |
+|         LevelGateway_20                             |    <0.001 |
+|         LevelGateway_21                             |    <0.001 |
+|         LevelGateway_22                             |    <0.001 |
+|         LevelGateway_23                             |    <0.001 |
+|         LevelGateway_24                             |    <0.001 |
+|         LevelGateway_25                             |    <0.001 |
+|         LevelGateway_26                             |    <0.001 |
+|         LevelGateway_27                             |    <0.001 |
+|         LevelGateway_28                             |    <0.001 |
+|         LevelGateway_29                             |    <0.001 |
+|         LevelGateway_3                              |    <0.001 |
+|         LevelGateway_30                             |    <0.001 |
+|         LevelGateway_31                             |    <0.001 |
+|         LevelGateway_32                             |    <0.001 |
+|         LevelGateway_33                             |    <0.001 |
+|         LevelGateway_34                             |    <0.001 |
+|         LevelGateway_35                             |    <0.001 |
+|         LevelGateway_36                             |    <0.001 |
+|         LevelGateway_37                             |    <0.001 |
+|         LevelGateway_38                             |    <0.001 |
+|         LevelGateway_39                             |    <0.001 |
+|         LevelGateway_4                              |    <0.001 |
+|         LevelGateway_40                             |    <0.001 |
+|         LevelGateway_41                             |    <0.001 |
+|         LevelGateway_42                             |    <0.001 |
+|         LevelGateway_43                             |    <0.001 |
+|         LevelGateway_44                             |    <0.001 |
+|         LevelGateway_45                             |    <0.001 |
+|         LevelGateway_46                             |    <0.001 |
+|         LevelGateway_47                             |    <0.001 |
+|         LevelGateway_48                             |    <0.001 |
+|         LevelGateway_49                             |    <0.001 |
+|         LevelGateway_5                              |    <0.001 |
+|         LevelGateway_50                             |    <0.001 |
+|         LevelGateway_51                             |    <0.001 |
+|         LevelGateway_6                              |    <0.001 |
+|         LevelGateway_7                              |    <0.001 |
+|         LevelGateway_8                              |    <0.001 |
+|         LevelGateway_9                              |    <0.001 |
+|         Queue                                       |    <0.001 |
+|       pwm_0_1                                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w4_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|             reg_1                                   |    <0.001 |
+|             reg_2                                   |    <0.001 |
+|             reg_3                                   |    <0.001 |
+|         pwm                                         |    <0.001 |
+|       pwm_1_1                                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w4_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|             reg_1                                   |    <0.001 |
+|             reg_2                                   |    <0.001 |
+|             reg_3                                   |    <0.001 |
+|         pwm                                         |    <0.001 |
+|       pwm_2_1                                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w4_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|             reg_1                                   |    <0.001 |
+|             reg_2                                   |    <0.001 |
+|             reg_3                                   |    <0.001 |
+|         pwm                                         |    <0.001 |
+|       qspi_0_1                                      |    <0.001 |
+|         arb                                         |    <0.001 |
+|         fifo                                        |    <0.001 |
+|           rxq                                       |    <0.001 |
+|             _T_35_reg_0_7_0_5                       |    <0.001 |
+|             _T_35_reg_0_7_6_7                       |    <0.001 |
+|           txq                                       |    <0.001 |
+|             _T_35_reg_0_7_0_5                       |    <0.001 |
+|             _T_35_reg_0_7_6_7                       |    <0.001 |
+|         flash                                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w1_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|         mac                                         |    <0.001 |
+|           phy                                       |    <0.001 |
+|       rtc                                           |    <0.001 |
+|       sbus                                          |     0.002 |
+|         control_bus                                 |     0.002 |
+|           atomics                                   |    <0.001 |
+|           buffer                                    |    <0.001 |
+|             Queue                                   |    <0.001 |
+|               _T_35_address_reg_0_1_0_5             |    <0.001 |
+|               _T_35_address_reg_0_1_12_17           |    <0.001 |
+|               _T_35_address_reg_0_1_18_23           |    <0.001 |
+|               _T_35_address_reg_0_1_24_29           |    <0.001 |
+|               _T_35_address_reg_0_1_30_31           |    <0.001 |
+|               _T_35_address_reg_0_1_6_11            |    <0.001 |
+|               _T_35_data_reg_0_1_0_5                |    <0.001 |
+|               _T_35_data_reg_0_1_12_17              |    <0.001 |
+|               _T_35_data_reg_0_1_18_23              |    <0.001 |
+|               _T_35_data_reg_0_1_24_29              |    <0.001 |
+|               _T_35_data_reg_0_1_30_31              |    <0.001 |
+|               _T_35_data_reg_0_1_6_11               |    <0.001 |
+|               _T_35_mask_reg_0_1_0_3                |    <0.001 |
+|               _T_35_opcode_reg_0_1_0_2              |    <0.001 |
+|               _T_35_param_reg_0_1_0_2               |    <0.001 |
+|               _T_35_size_reg_0_1_0_3                |    <0.001 |
+|               _T_35_source_reg_0_1_0_0              |    <0.001 |
+|             Queue_1                                 |    <0.001 |
+|               _T_35_corrupt_reg_0_1_0_0             |    <0.001 |
+|               _T_35_data_reg_0_1_0_5                |    <0.001 |
+|               _T_35_data_reg_0_1_12_17              |    <0.001 |
+|               _T_35_data_reg_0_1_18_23              |    <0.001 |
+|               _T_35_data_reg_0_1_24_29              |    <0.001 |
+|               _T_35_data_reg_0_1_30_31              |    <0.001 |
+|               _T_35_data_reg_0_1_6_11               |    <0.001 |
+|               _T_35_denied_reg_0_1_0_0              |    <0.001 |
+|               _T_35_opcode_reg_0_1_0_2              |    <0.001 |
+|               _T_35_size_reg_0_1_0_3                |    <0.001 |
+|               _T_35_source_reg_0_1_0_0              |    <0.001 |
+|           coupler_to_slave_named_MaskROM            |    <0.001 |
+|             fragmenter                              |    <0.001 |
+|               Repeater                              |    <0.001 |
+|           coupler_to_slave_named_aon                |    <0.001 |
+|             asource                                 |    <0.001 |
+|               AsyncQueueSink                        |    <0.001 |
+|                 AsyncValidSync                      |    <0.001 |
+|                   source_valid                      |    <0.001 |
+|                     sync_0                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                     sync_1                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                     sync_2                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                     sync_3                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                 AsyncValidSync_1                    |    <0.001 |
+|                   sink_extend                       |    <0.001 |
+|                     sync_0                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                 AsyncValidSync_2                    |    <0.001 |
+|                   sink_valid                        |    <0.001 |
+|                     sync_0                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                     sync_1                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                     sync_2                          |    <0.001 |
+|                       reg_0                         |    <0.001 |
+|                 deq_bits_reg                        |    <0.001 |
+|                 ridx_bin                            |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 valid_reg                           |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 widx_gray                           |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_1                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_2                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|               AsyncQueueSource                      |    <0.001 |
+|                 ready_reg                           |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|                 ridx_gray                           |    <0.001 |
+|                   sync_0                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_1                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                   sync_2                            |    <0.001 |
+|                     reg_0                           |    <0.001 |
+|                 widx_bin                            |    <0.001 |
+|                   reg_0                             |    <0.001 |
+|             fragmenter                              |    <0.001 |
+|               Repeater                              |    <0.001 |
+|           coupler_to_slave_named_clint              |    <0.001 |
+|             fragmenter                              |    <0.001 |
+|               Repeater                              |    <0.001 |
+|           coupler_to_slave_named_debug              |    <0.001 |
+|             fragmenter                              |    <0.001 |
+|               Repeater                              |    <0.001 |
+|           coupler_to_slave_named_plic               |    <0.001 |
+|             fragmenter                              |    <0.001 |
+|               Repeater                              |    <0.001 |
+|           out_xbar                                  |    <0.001 |
+|       spi_0_1                                       |    <0.001 |
+|         fifo                                        |    <0.001 |
+|           rxq                                       |    <0.001 |
+|             _T_35_reg_0_7_0_5                       |    <0.001 |
+|             _T_35_reg_0_7_6_7                       |    <0.001 |
+|           txq                                       |    <0.001 |
+|             _T_35_reg_0_7_0_5                       |    <0.001 |
+|             _T_35_reg_0_7_6_7                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w1_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|         mac                                         |    <0.001 |
+|           phy                                       |    <0.001 |
+|       spi_1_1                                       |    <0.001 |
+|         fifo                                        |    <0.001 |
+|           rxq                                       |    <0.001 |
+|             _T_35_reg_0_7_0_5                       |    <0.001 |
+|             _T_35_reg_0_7_6_7                       |    <0.001 |
+|           txq                                       |    <0.001 |
+|             _T_35_reg_0_7_0_5                       |    <0.001 |
+|             _T_35_reg_0_7_6_7                       |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w1_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|         mac                                         |    <0.001 |
+|           phy                                       |    <0.001 |
+|       tile                                          |     0.018 |
+|         buffer                                      |    <0.001 |
+|           Queue                                     |    <0.001 |
+|             _T_35_address_reg_0_1_0_5               |    <0.001 |
+|             _T_35_address_reg_0_1_12_17             |    <0.001 |
+|             _T_35_address_reg_0_1_18_23             |    <0.001 |
+|             _T_35_address_reg_0_1_24_29             |    <0.001 |
+|             _T_35_address_reg_0_1_30_31             |    <0.001 |
+|             _T_35_address_reg_0_1_6_11              |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_mask_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_param_reg_0_1_0_2                 |    <0.001 |
+|             _T_35_size_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|           Queue_1                                   |    <0.001 |
+|             _T_35_corrupt_reg_0_1_0_0               |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_size_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|         buffer_1                                    |    <0.001 |
+|           Queue                                     |    <0.001 |
+|             _T_35_address_reg_0_1_0_5               |    <0.001 |
+|             _T_35_address_reg_0_1_12_17             |    <0.001 |
+|             _T_35_address_reg_0_1_18_23             |    <0.001 |
+|             _T_35_address_reg_0_1_24_29             |    <0.001 |
+|             _T_35_address_reg_0_1_30_31             |    <0.001 |
+|             _T_35_address_reg_0_1_6_11              |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_mask_reg_0_1_0_3                  |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_param_reg_0_1_0_2                 |    <0.001 |
+|             _T_35_size_reg_0_1_0_2                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|           Queue_1                                   |    <0.001 |
+|             _T_35_data_reg_0_1_0_5                  |    <0.001 |
+|             _T_35_data_reg_0_1_12_17                |    <0.001 |
+|             _T_35_data_reg_0_1_18_23                |    <0.001 |
+|             _T_35_data_reg_0_1_24_29                |    <0.001 |
+|             _T_35_data_reg_0_1_30_31                |    <0.001 |
+|             _T_35_data_reg_0_1_6_11                 |    <0.001 |
+|             _T_35_denied_reg_0_1_0_0                |    <0.001 |
+|             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
+|             _T_35_size_reg_0_1_0_2                  |    <0.001 |
+|             _T_35_source_reg_0_1_0_0                |    <0.001 |
+|         core                                        |     0.005 |
+|           _T_574_reg_r1_0_31_0_5                    |    <0.001 |
+|           _T_574_reg_r1_0_31_12_17                  |    <0.001 |
+|           _T_574_reg_r1_0_31_18_23                  |    <0.001 |
+|           _T_574_reg_r1_0_31_24_29                  |    <0.001 |
+|           _T_574_reg_r1_0_31_30_31                  |    <0.001 |
+|           _T_574_reg_r1_0_31_6_11                   |    <0.001 |
+|           _T_574_reg_r2_0_31_0_5                    |    <0.001 |
+|           _T_574_reg_r2_0_31_12_17                  |    <0.001 |
+|           _T_574_reg_r2_0_31_18_23                  |    <0.001 |
+|           _T_574_reg_r2_0_31_24_29                  |    <0.001 |
+|           _T_574_reg_r2_0_31_30_31                  |    <0.001 |
+|           _T_574_reg_r2_0_31_6_11                   |    <0.001 |
+|           addu                                      |    <0.001 |
+|           csr                                       |     0.001 |
+|           div                                       |     0.002 |
+|           ibuf                                      |    <0.001 |
+|         dcache                                      |     0.003 |
+|           data                                      |     0.003 |
+|           tlb                                       |    <0.001 |
+|             pmp                                     |    <0.001 |
+|         dcacheArb                                   |    <0.001 |
+|         dtim_adapter                                |    <0.001 |
+|         fragmenter_1                                |    <0.001 |
+|           Repeater                                  |    <0.001 |
+|         frontend                                    |     0.008 |
+|           fq                                        |     0.004 |
+|           icache                                    |     0.002 |
+|           tlb                                       |    <0.001 |
+|             pmp                                     |    <0.001 |
+|         intsink                                     |    <0.001 |
+|           SynchronizerShiftReg_w1_d3                |    <0.001 |
+|         tlMasterXbar                                |    <0.001 |
+|       uart_0_1                                      |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w1_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|         rxm                                         |    <0.001 |
+|         rxq                                         |    <0.001 |
+|           _T_35_reg_0_7_0_5                         |    <0.001 |
+|           _T_35_reg_0_7_6_7                         |    <0.001 |
+|         txm                                         |    <0.001 |
+|         txq                                         |    <0.001 |
+|           _T_35_reg_0_7_0_5                         |    <0.001 |
+|           _T_35_reg_0_7_6_7                         |    <0.001 |
+|       uart_1_1                                      |    <0.001 |
+|         intsource                                   |    <0.001 |
+|           AsyncResetRegVec_w1_i0                    |    <0.001 |
+|             reg_0                                   |    <0.001 |
+|         rxm                                         |    <0.001 |
+|         rxq                                         |    <0.001 |
+|           _T_35_reg_0_7_0_5                         |    <0.001 |
+|           _T_35_reg_0_7_6_7                         |    <0.001 |
+|         txm                                         |    <0.001 |
+|         txq                                         |    <0.001 |
+|           _T_35_reg_0_7_0_5                         |    <0.001 |
+|           _T_35_reg_0_7_6_7                         |    <0.001 |
+|   IOBUF                                             |     0.006 |
+|   IOBUF_1                                           |    <0.001 |
+|   IOBUF_10                                          |     0.000 |
+|   IOBUF_11                                          |    <0.001 |
+|   IOBUF_12                                          |    <0.001 |
+|   IOBUF_13                                          |     0.000 |
+|   IOBUF_14                                          |    <0.001 |
+|   IOBUF_15                                          |    <0.001 |
+|   IOBUF_16                                          |    <0.001 |
+|   IOBUF_17                                          |    <0.001 |
+|   IOBUF_18                                          |    <0.001 |
+|   IOBUF_19                                          |    <0.001 |
+|   IOBUF_2                                           |    <0.001 |
+|   IOBUF_20                                          |    <0.001 |
+|   IOBUF_21                                          |    <0.001 |
+|   IOBUF_22                                          |    <0.001 |
+|   IOBUF_23                                          |    <0.001 |
+|   IOBUF_24                                          |    <0.001 |
+|   IOBUF_25                                          |    <0.001 |
+|   IOBUF_26                                          |    <0.001 |
+|   IOBUF_27                                          |    <0.001 |
+|   IOBUF_28                                          |    <0.001 |
+|   IOBUF_29                                          |    <0.001 |
+|   IOBUF_3                                           |    <0.001 |
+|   IOBUF_30                                          |    <0.001 |
+|   IOBUF_31                                          |    <0.001 |
+|   IOBUF_32                                          |    <0.001 |
+|   IOBUF_33                                          |    <0.001 |
+|   IOBUF_34                                          |    <0.001 |
+|   IOBUF_35                                          |    <0.001 |
+|   IOBUF_36                                          |    <0.001 |
+|   IOBUF_37                                          |    <0.001 |
+|   IOBUF_38                                          |    <0.001 |
+|   IOBUF_39                                          |    <0.001 |
+|   IOBUF_4                                           |    <0.001 |
+|   IOBUF_40                                          |    <0.001 |
+|   IOBUF_41                                          |    <0.001 |
+|   IOBUF_42                                          |    <0.001 |
+|   IOBUF_43                                          |    <0.001 |
+|   IOBUF_44                                          |     0.000 |
+|   IOBUF_45                                          |    <0.001 |
+|   IOBUF_46                                          |    <0.001 |
+|   IOBUF_47                                          |    <0.001 |
+|   IOBUF_48                                          |    <0.001 |
+|   IOBUF_49                                          |    <0.001 |
+|   IOBUF_5                                           |    <0.001 |
+|   IOBUF_50                                          |    <0.001 |
+|   IOBUF_51                                          |     0.000 |
+|   IOBUF_52                                          |    <0.001 |
+|   IOBUF_53                                          |    <0.001 |
+|   IOBUF_54                                          |    <0.001 |
+|   IOBUF_6                                           |     0.001 |
+|   IOBUF_7                                           |     0.000 |
+|   IOBUF_8                                           |     0.000 |
+|   IOBUF_9                                           |    <0.001 |
+|   fpga_power_on                                     |    <0.001 |
+|   ip_mmcm                                           |     0.097 |
+|     inst                                            |     0.097 |
+|   ip_reset_sys                                      |    <0.001 |
+|     U0                                              |    <0.001 |
+|       EXT_LPF                                       |    <0.001 |
+|         ACTIVE_LOW_AUX.ACT_LO_AUX                   |    <0.001 |
+|         ACTIVE_LOW_EXT.ACT_LO_EXT                   |    <0.001 |
+|       SEQ                                           |    <0.001 |
+|         SEQ_COUNTER                                 |    <0.001 |
++-----------------------------------------------------+-----------+
+
+

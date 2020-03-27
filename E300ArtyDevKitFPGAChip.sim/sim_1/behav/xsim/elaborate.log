@@ -1,0 +1,26 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/rv/xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto fe55d63ed4104671a9a7f6c3cfc109a9 --incr --debug typical --relax --mt 8 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot E300ArtyDevKitFPGAChip_behav xil_defaultlib.E300ArtyDevKitFPGAChip xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <plusarg_reader> not found while processing module instance <plusarg_reader> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:550]
+ERROR: [VRFC 10-2063] Module <PeripheryBus> not found while processing module instance <control_bus> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:92229]
+ERROR: [VRFC 10-2063] Module <SimpleLazyModule_8> not found while processing module instance <coupler_to_bus_named_cbus> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:92382]
+ERROR: [VRFC 10-2063] Module <TLSplitter> not found while processing module instance <master_splitter> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:92426]
+ERROR: [VRFC 10-2063] Module <SimpleLazyModule_10> not found while processing module instance <coupler_from_tile_named_tile> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:92470]
+ERROR: [VRFC 10-2063] Module <PeripheryBus_1> not found while processing module instance <pbus> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329086]
+ERROR: [VRFC 10-2063] Module <TLPLIC> not found while processing module instance <plic> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329284]
+ERROR: [VRFC 10-2063] Module <CLINT> not found while processing module instance <clint> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329357]
+ERROR: [VRFC 10-2063] Module <TLDebugModule> not found while processing module instance <debug_1> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329380]
+ERROR: [VRFC 10-2063] Module <RocketTile> not found while processing module instance <tile> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329413]
+ERROR: [VRFC 10-2063] Module <IntSyncCrossingSource_2> not found while processing module instance <intsource> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329460]
+ERROR: [VRFC 10-2063] Module <IntSyncCrossingSource_3> not found while processing module instance <intsource_1> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329468]
+ERROR: [VRFC 10-2063] Module <TLMaskROM> not found while processing module instance <maskROM> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329474]
+ERROR: [VRFC 10-2063] Module <MockAONWrapper> not found while processing module instance <aon_1> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329492]
+ERROR: [VRFC 10-2063] Module <IntSyncCrossingSink_4> not found while processing module instance <intsink_1> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329530]
+ERROR: [VRFC 10-2063] Module <IntXing> not found while processing module instance <asyncXing> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329537]
+ERROR: [VRFC 10-2063] Module <TLUART> not found while processing module instance <uart_0_1> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329542]
+ERROR: [VRFC 10-2063] Module <IntSyncCrossingSink_2> not found while processing module instance <intsink_2> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329565]
+ERROR: [VRFC 10-2063] Module <TLUART_1> not found while processing module instance <uart_1_1> [/home/rv/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v:329574]
+INFO: [#UNDEF] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

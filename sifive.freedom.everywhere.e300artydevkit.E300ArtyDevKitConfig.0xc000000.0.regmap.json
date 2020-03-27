@@ -1,0 +1,1328 @@
+{
+  "peripheral" : {
+    "displayName" : "deviceAt0xc000000",
+    "baseAddress" : "0xc000000",
+    "regfields" : [ {
+      "priority_1" : {
+        "byteOffset" : "0x4",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_1",
+        "description" : "Acting priority of interrupt source 1",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_2" : {
+        "byteOffset" : "0x8",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_2",
+        "description" : "Acting priority of interrupt source 2",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_3" : {
+        "byteOffset" : "0xc",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_3",
+        "description" : "Acting priority of interrupt source 3",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_4" : {
+        "byteOffset" : "0x10",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_4",
+        "description" : "Acting priority of interrupt source 4",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_5" : {
+        "byteOffset" : "0x14",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_5",
+        "description" : "Acting priority of interrupt source 5",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_6" : {
+        "byteOffset" : "0x18",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_6",
+        "description" : "Acting priority of interrupt source 6",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_7" : {
+        "byteOffset" : "0x1c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_7",
+        "description" : "Acting priority of interrupt source 7",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_8" : {
+        "byteOffset" : "0x20",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_8",
+        "description" : "Acting priority of interrupt source 8",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_9" : {
+        "byteOffset" : "0x24",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_9",
+        "description" : "Acting priority of interrupt source 9",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_10" : {
+        "byteOffset" : "0x28",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_10",
+        "description" : "Acting priority of interrupt source 10",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_11" : {
+        "byteOffset" : "0x2c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_11",
+        "description" : "Acting priority of interrupt source 11",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_12" : {
+        "byteOffset" : "0x30",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_12",
+        "description" : "Acting priority of interrupt source 12",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_13" : {
+        "byteOffset" : "0x34",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_13",
+        "description" : "Acting priority of interrupt source 13",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_14" : {
+        "byteOffset" : "0x38",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_14",
+        "description" : "Acting priority of interrupt source 14",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_15" : {
+        "byteOffset" : "0x3c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_15",
+        "description" : "Acting priority of interrupt source 15",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_16" : {
+        "byteOffset" : "0x40",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_16",
+        "description" : "Acting priority of interrupt source 16",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_17" : {
+        "byteOffset" : "0x44",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_17",
+        "description" : "Acting priority of interrupt source 17",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_18" : {
+        "byteOffset" : "0x48",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_18",
+        "description" : "Acting priority of interrupt source 18",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_19" : {
+        "byteOffset" : "0x4c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_19",
+        "description" : "Acting priority of interrupt source 19",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_20" : {
+        "byteOffset" : "0x50",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_20",
+        "description" : "Acting priority of interrupt source 20",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_21" : {
+        "byteOffset" : "0x54",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_21",
+        "description" : "Acting priority of interrupt source 21",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_22" : {
+        "byteOffset" : "0x58",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_22",
+        "description" : "Acting priority of interrupt source 22",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_23" : {
+        "byteOffset" : "0x5c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_23",
+        "description" : "Acting priority of interrupt source 23",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_24" : {
+        "byteOffset" : "0x60",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_24",
+        "description" : "Acting priority of interrupt source 24",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_25" : {
+        "byteOffset" : "0x64",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_25",
+        "description" : "Acting priority of interrupt source 25",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_26" : {
+        "byteOffset" : "0x68",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_26",
+        "description" : "Acting priority of interrupt source 26",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_27" : {
+        "byteOffset" : "0x6c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_27",
+        "description" : "Acting priority of interrupt source 27",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_28" : {
+        "byteOffset" : "0x70",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_28",
+        "description" : "Acting priority of interrupt source 28",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_29" : {
+        "byteOffset" : "0x74",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_29",
+        "description" : "Acting priority of interrupt source 29",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_30" : {
+        "byteOffset" : "0x78",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_30",
+        "description" : "Acting priority of interrupt source 30",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_31" : {
+        "byteOffset" : "0x7c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_31",
+        "description" : "Acting priority of interrupt source 31",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_32" : {
+        "byteOffset" : "0x80",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_32",
+        "description" : "Acting priority of interrupt source 32",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_33" : {
+        "byteOffset" : "0x84",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_33",
+        "description" : "Acting priority of interrupt source 33",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_34" : {
+        "byteOffset" : "0x88",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_34",
+        "description" : "Acting priority of interrupt source 34",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_35" : {
+        "byteOffset" : "0x8c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_35",
+        "description" : "Acting priority of interrupt source 35",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_36" : {
+        "byteOffset" : "0x90",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_36",
+        "description" : "Acting priority of interrupt source 36",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_37" : {
+        "byteOffset" : "0x94",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_37",
+        "description" : "Acting priority of interrupt source 37",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_38" : {
+        "byteOffset" : "0x98",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_38",
+        "description" : "Acting priority of interrupt source 38",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_39" : {
+        "byteOffset" : "0x9c",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_39",
+        "description" : "Acting priority of interrupt source 39",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_40" : {
+        "byteOffset" : "0xa0",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_40",
+        "description" : "Acting priority of interrupt source 40",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_41" : {
+        "byteOffset" : "0xa4",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_41",
+        "description" : "Acting priority of interrupt source 41",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_42" : {
+        "byteOffset" : "0xa8",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_42",
+        "description" : "Acting priority of interrupt source 42",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_43" : {
+        "byteOffset" : "0xac",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_43",
+        "description" : "Acting priority of interrupt source 43",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_44" : {
+        "byteOffset" : "0xb0",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_44",
+        "description" : "Acting priority of interrupt source 44",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_45" : {
+        "byteOffset" : "0xb4",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_45",
+        "description" : "Acting priority of interrupt source 45",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_46" : {
+        "byteOffset" : "0xb8",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_46",
+        "description" : "Acting priority of interrupt source 46",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_47" : {
+        "byteOffset" : "0xbc",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_47",
+        "description" : "Acting priority of interrupt source 47",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_48" : {
+        "byteOffset" : "0xc0",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_48",
+        "description" : "Acting priority of interrupt source 48",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_49" : {
+        "byteOffset" : "0xc4",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_49",
+        "description" : "Acting priority of interrupt source 49",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_50" : {
+        "byteOffset" : "0xc8",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_50",
+        "description" : "Acting priority of interrupt source 50",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_51" : {
+        "byteOffset" : "0xcc",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_51",
+        "description" : "Acting priority of interrupt source 51",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "priority_52" : {
+        "byteOffset" : "0xd0",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "priority_52",
+        "description" : "Acting priority of interrupt source 52",
+        "group" : "priority",
+        "groupDesc" : "Acting priorities of each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 0,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "accessType" : "R"
+      }
+    }, {
+      "pending_1" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 1,
+        "bitWidth" : 1,
+        "name" : "pending_1",
+        "description" : "Set to 1 if interrupt source 1 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_2" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 2,
+        "bitWidth" : 1,
+        "name" : "pending_2",
+        "description" : "Set to 1 if interrupt source 2 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_3" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 3,
+        "bitWidth" : 1,
+        "name" : "pending_3",
+        "description" : "Set to 1 if interrupt source 3 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_4" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 4,
+        "bitWidth" : 1,
+        "name" : "pending_4",
+        "description" : "Set to 1 if interrupt source 4 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_5" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 5,
+        "bitWidth" : 1,
+        "name" : "pending_5",
+        "description" : "Set to 1 if interrupt source 5 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_6" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 6,
+        "bitWidth" : 1,
+        "name" : "pending_6",
+        "description" : "Set to 1 if interrupt source 6 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_7" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 7,
+        "bitWidth" : 1,
+        "name" : "pending_7",
+        "description" : "Set to 1 if interrupt source 7 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_8" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 8,
+        "bitWidth" : 1,
+        "name" : "pending_8",
+        "description" : "Set to 1 if interrupt source 8 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_9" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 9,
+        "bitWidth" : 1,
+        "name" : "pending_9",
+        "description" : "Set to 1 if interrupt source 9 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_10" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 10,
+        "bitWidth" : 1,
+        "name" : "pending_10",
+        "description" : "Set to 1 if interrupt source 10 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_11" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 11,
+        "bitWidth" : 1,
+        "name" : "pending_11",
+        "description" : "Set to 1 if interrupt source 11 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_12" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 12,
+        "bitWidth" : 1,
+        "name" : "pending_12",
+        "description" : "Set to 1 if interrupt source 12 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_13" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 13,
+        "bitWidth" : 1,
+        "name" : "pending_13",
+        "description" : "Set to 1 if interrupt source 13 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_14" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 14,
+        "bitWidth" : 1,
+        "name" : "pending_14",
+        "description" : "Set to 1 if interrupt source 14 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_15" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 15,
+        "bitWidth" : 1,
+        "name" : "pending_15",
+        "description" : "Set to 1 if interrupt source 15 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_16" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 16,
+        "bitWidth" : 1,
+        "name" : "pending_16",
+        "description" : "Set to 1 if interrupt source 16 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_17" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 17,
+        "bitWidth" : 1,
+        "name" : "pending_17",
+        "description" : "Set to 1 if interrupt source 17 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_18" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 18,
+        "bitWidth" : 1,
+        "name" : "pending_18",
+        "description" : "Set to 1 if interrupt source 18 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_19" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 19,
+        "bitWidth" : 1,
+        "name" : "pending_19",
+        "description" : "Set to 1 if interrupt source 19 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_20" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 20,
+        "bitWidth" : 1,
+        "name" : "pending_20",
+        "description" : "Set to 1 if interrupt source 20 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_21" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 21,
+        "bitWidth" : 1,
+        "name" : "pending_21",
+        "description" : "Set to 1 if interrupt source 21 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_22" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 22,
+        "bitWidth" : 1,
+        "name" : "pending_22",
+        "description" : "Set to 1 if interrupt source 22 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_23" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 23,
+        "bitWidth" : 1,
+        "name" : "pending_23",
+        "description" : "Set to 1 if interrupt source 23 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_24" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 24,
+        "bitWidth" : 1,
+        "name" : "pending_24",
+        "description" : "Set to 1 if interrupt source 24 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_25" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 25,
+        "bitWidth" : 1,
+        "name" : "pending_25",
+        "description" : "Set to 1 if interrupt source 25 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_26" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 26,
+        "bitWidth" : 1,
+        "name" : "pending_26",
+        "description" : "Set to 1 if interrupt source 26 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_27" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 27,
+        "bitWidth" : 1,
+        "name" : "pending_27",
+        "description" : "Set to 1 if interrupt source 27 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_28" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 28,
+        "bitWidth" : 1,
+        "name" : "pending_28",
+        "description" : "Set to 1 if interrupt source 28 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_29" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 29,
+        "bitWidth" : 1,
+        "name" : "pending_29",
+        "description" : "Set to 1 if interrupt source 29 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_30" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 30,
+        "bitWidth" : 1,
+        "name" : "pending_30",
+        "description" : "Set to 1 if interrupt source 30 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_31" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 31,
+        "bitWidth" : 1,
+        "name" : "pending_31",
+        "description" : "Set to 1 if interrupt source 31 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_32" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 32,
+        "bitWidth" : 1,
+        "name" : "pending_32",
+        "description" : "Set to 1 if interrupt source 32 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_33" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 33,
+        "bitWidth" : 1,
+        "name" : "pending_33",
+        "description" : "Set to 1 if interrupt source 33 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_34" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 34,
+        "bitWidth" : 1,
+        "name" : "pending_34",
+        "description" : "Set to 1 if interrupt source 34 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_35" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 35,
+        "bitWidth" : 1,
+        "name" : "pending_35",
+        "description" : "Set to 1 if interrupt source 35 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_36" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 36,
+        "bitWidth" : 1,
+        "name" : "pending_36",
+        "description" : "Set to 1 if interrupt source 36 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_37" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 37,
+        "bitWidth" : 1,
+        "name" : "pending_37",
+        "description" : "Set to 1 if interrupt source 37 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_38" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 38,
+        "bitWidth" : 1,
+        "name" : "pending_38",
+        "description" : "Set to 1 if interrupt source 38 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_39" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 39,
+        "bitWidth" : 1,
+        "name" : "pending_39",
+        "description" : "Set to 1 if interrupt source 39 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_40" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 40,
+        "bitWidth" : 1,
+        "name" : "pending_40",
+        "description" : "Set to 1 if interrupt source 40 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_41" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 41,
+        "bitWidth" : 1,
+        "name" : "pending_41",
+        "description" : "Set to 1 if interrupt source 41 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_42" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 42,
+        "bitWidth" : 1,
+        "name" : "pending_42",
+        "description" : "Set to 1 if interrupt source 42 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_43" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 43,
+        "bitWidth" : 1,
+        "name" : "pending_43",
+        "description" : "Set to 1 if interrupt source 43 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_44" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 44,
+        "bitWidth" : 1,
+        "name" : "pending_44",
+        "description" : "Set to 1 if interrupt source 44 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_45" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 45,
+        "bitWidth" : 1,
+        "name" : "pending_45",
+        "description" : "Set to 1 if interrupt source 45 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_46" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 46,
+        "bitWidth" : 1,
+        "name" : "pending_46",
+        "description" : "Set to 1 if interrupt source 46 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_47" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 47,
+        "bitWidth" : 1,
+        "name" : "pending_47",
+        "description" : "Set to 1 if interrupt source 47 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_48" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 48,
+        "bitWidth" : 1,
+        "name" : "pending_48",
+        "description" : "Set to 1 if interrupt source 48 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_49" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 49,
+        "bitWidth" : 1,
+        "name" : "pending_49",
+        "description" : "Set to 1 if interrupt source 49 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_50" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 50,
+        "bitWidth" : 1,
+        "name" : "pending_50",
+        "description" : "Set to 1 if interrupt source 50 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_51" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 51,
+        "bitWidth" : 1,
+        "name" : "pending_51",
+        "description" : "Set to 1 if interrupt source 51 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "pending_52" : {
+        "byteOffset" : "0x1000",
+        "bitOffset" : 52,
+        "bitWidth" : 1,
+        "name" : "pending_52",
+        "description" : "Set to 1 if interrupt source 52 is pending, regardless of its enable or priority setting.",
+        "group" : "pending",
+        "groupDesc" : "Pending Bit Array. 1 Bit for each interrupt source.",
+        "accessType" : "R",
+        "volatile" : true
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 0,
+        "bitWidth" : 1,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "accessType" : "R"
+      }
+    }, {
+      "enables_0" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 1,
+        "bitWidth" : 7,
+        "name" : "enables_0",
+        "description" : "Targets 1-7. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "enables_1" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 8,
+        "bitWidth" : 8,
+        "name" : "enables_1",
+        "description" : "Targets 8-15. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "enables_2" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 16,
+        "bitWidth" : 8,
+        "name" : "enables_2",
+        "description" : "Targets 16-23. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "enables_3" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 24,
+        "bitWidth" : 8,
+        "name" : "enables_3",
+        "description" : "Targets 24-31. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "enables_4" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 32,
+        "bitWidth" : 8,
+        "name" : "enables_4",
+        "description" : "Targets 32-39. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "enables_5" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 40,
+        "bitWidth" : 8,
+        "name" : "enables_5",
+        "description" : "Targets 40-47. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "enables_6" : {
+        "byteOffset" : "0x2000",
+        "bitOffset" : 48,
+        "bitWidth" : 5,
+        "name" : "enables_6",
+        "description" : "Targets 48-52. Set bits to 1 if interrupt should be enabled.",
+        "group" : "enables_0",
+        "groupDesc" : "Enable bits for each interrupt source for target 0. 1 bit for each interrupt source.",
+        "accessType" : "RW"
+      }
+    }, {
+      "threshold_0" : {
+        "byteOffset" : "0x200000",
+        "bitOffset" : 0,
+        "bitWidth" : 3,
+        "name" : "threshold_0",
+        "description" : "Interrupt & claim threshold for target 0. Maximum value is 7.",
+        "accessType" : "RW"
+      }
+    }, {
+      "reserved" : {
+        "byteOffset" : "0x200000",
+        "bitOffset" : 3,
+        "bitWidth" : 29,
+        "name" : "reserved",
+        "resetValue" : 0,
+        "accessType" : "R"
+      }
+    }, {
+      "claim_complete_0" : {
+        "byteOffset" : "0x200000",
+        "bitOffset" : 32,
+        "bitWidth" : 32,
+        "name" : "claim_complete_0",
+        "description" : "Claim/Complete register for Target 0. Reading this register returns the claimed interrupt number and makes it no longer pending.Writing the interrupt number back completes the interrupt.",
+        "accessType" : "RW",
+        "writeType" : "MODIFY",
+        "readAction" : "MODIFY",
+        "volatile" : true
+      }
+    } ]
+  }
+}

@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../obj/ip/reset_sys/sim/reset_sys.vhd" \
+
+# Do not sort compile order
+nosort
