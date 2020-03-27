@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_param tcl.collectionResultDisplayLimit 0
 create_project -in_memory -part xc7a35ticsg324-1L
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,13 +33,13 @@ set_property ip_repo_paths /home/rv/riscv/e300artydevkit/obj/ip [current_project
 set_property ip_output_repo /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/riscv/freedom/rocket-chip/src/main/resources/vsrc/AsyncResetReg.v
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/ipwrapper/Blackbox_BlkDualBram.v
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/freedom/fpga-shells/xilinx/common/vsrc/PowerOnResetFPGAOnly.v
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/vsrc/SRLatch.v
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/vsrc/plusarg_reader.v
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.rom.v
-  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/imports/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/rocket-chip/src/main/resources/vsrc/AsyncResetReg.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/ipwrapper/Blackbox_BlkDualBram.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/fpga-shells/xilinx/common/vsrc/PowerOnResetFPGAOnly.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/sifive-blocks/vsrc/SRLatch.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/rocket-chip/src/main/resources/vsrc/plusarg_reader.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.rom.v
+  /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v
 }
 read_ip -quiet /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/ip/reset_sys/reset_sys.xci
 set_property used_in_implementation false [get_files -all /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.srcs/sources_1/ip/reset_sys/reset_sys_board.xdc]

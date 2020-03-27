@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1585296275">
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1585300535">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="E300ArtyDevKitFPGAChip.drc"/>
   <File Type="BG-BGN" Name="E300ArtyDevKitFPGAChip.bgn"/>
@@ -89,74 +89,50 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/riscv/freedom/rocket-chip/src/main/resources/vsrc/AsyncResetReg.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/rocket-chip/src/main/resources/vsrc/AsyncResetReg.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/rocket-chip/src/main/resources/vsrc/AsyncResetReg.v"/>
-        <Attr Name="ImportTime" Val="1566059938"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/ipwrapper/Blackbox_BlkDualBram.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/ipwrapper/Blackbox_BlkDualBram.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/rocket-chip/src/main/resources/ipwrapper/Blackbox_BlkDualBram.v"/>
-        <Attr Name="ImportTime" Val="1585293738"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/freedom/fpga-shells/xilinx/common/vsrc/PowerOnResetFPGAOnly.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/fpga-shells/xilinx/common/vsrc/PowerOnResetFPGAOnly.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/fpga-shells/xilinx/common/vsrc/PowerOnResetFPGAOnly.v"/>
-        <Attr Name="ImportTime" Val="1566059900"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/vsrc/SRLatch.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/sifive-blocks/vsrc/SRLatch.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/sifive-blocks/vsrc/SRLatch.v"/>
-        <Attr Name="ImportTime" Val="1566066269"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/vsrc/plusarg_reader.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/rocket-chip/src/main/resources/vsrc/plusarg_reader.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/rocket-chip/src/main/resources/vsrc/plusarg_reader.v"/>
-        <Attr Name="ImportTime" Val="1566059938"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/riscv/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.rom.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.rom.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.rom.v"/>
-        <Attr Name="ImportTime" Val="1578053764"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v">
+    <File Path="$PSRCDIR/sources_1/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/builds/e300artydevkit/sifive.freedom.everywhere.e300artydevkit.E300ArtyDevKitConfig.v"/>
-        <Attr Name="ImportTime" Val="1585295518"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/freedom/rocket-chip/src/main/resources/vsrc/plusarg_reader.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../freedom/rocket-chip/src/main/resources/vsrc/plusarg_reader.v"/>
-        <Attr Name="ImportTime" Val="1566059938"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -175,6 +151,7 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="E300ArtyDevKitFPGAChip"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

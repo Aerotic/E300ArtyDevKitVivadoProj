@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Fri Mar 27 16:13:14 2020
+| Date             : Fri Mar 27 17:25:10 2020
 | Host             : rv running 64-bit Ubuntu 16.04.5 LTS
 | Command          : report_power -file E300ArtyDevKitFPGAChip_power_routed.rpt -pb E300ArtyDevKitFPGAChip_power_summary_routed.pb -rpx E300ArtyDevKitFPGAChip_power_routed.rpx
 | Design           : E300ArtyDevKitFPGAChip
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.210        |
+| Total On-Chip Power (W)  | 0.209        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.148        |
+| Dynamic (W)              | 0.147        |
 | Device Static (W)        | 0.062        |
 | Effective TJA (C/W)      | 4.8          |
 | Max Ambient (C)          | 99.0         |
@@ -53,22 +53,22 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.008 |       12 |       --- |             --- |
-| Slice Logic              |     0.009 |    26924 |       --- |             --- |
-|   LUT as Logic           |     0.008 |    13213 |     20800 |           63.52 |
-|   LUT as Distributed RAM |    <0.001 |      648 |      9600 |            6.75 |
+| Slice Logic              |     0.008 |    27932 |       --- |             --- |
+|   LUT as Logic           |     0.007 |    13900 |     20800 |           66.83 |
 |   CARRY4                 |    <0.001 |      599 |      8150 |            7.35 |
-|   Register               |    <0.001 |     7923 |     41600 |           19.05 |
-|   LUT as Shift Register  |    <0.001 |       65 |      9600 |            0.68 |
-|   F7/F8 Muxes            |    <0.001 |      605 |     32600 |            1.86 |
+|   LUT as Distributed RAM |    <0.001 |      648 |      9600 |            6.75 |
+|   Register               |    <0.001 |     7999 |     41600 |           19.23 |
+|   LUT as Shift Register  |    <0.001 |       66 |      9600 |            0.69 |
+|   F7/F8 Muxes            |    <0.001 |      813 |     32600 |            2.49 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |      623 |       --- |             --- |
-| Signals                  |     0.011 |    20712 |       --- |             --- |
+| Signals                  |     0.010 |    21290 |       --- |             --- |
 | Block RAM                |     0.004 |      5.5 |        50 |           11.00 |
 | MMCM                     |     0.097 |        1 |         5 |           20.00 |
 | DSPs                     |    <0.001 |        2 |        90 |            2.22 |
-| I/O                      |     0.019 |       57 |       210 |           27.14 |
+| I/O                      |     0.020 |       57 |       210 |           27.14 |
 | Static Power             |     0.062 |          |           |                 |
-| Total                    |     0.210 |          |           |                 |
+| Total                    |     0.209 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,9 +78,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       0.950 |     0.040 |       0.034 |      0.006 |
-| Vccaux    |       1.800 |     0.066 |       0.054 |      0.011 |
-| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
+| Vccint    |       0.950 |     0.037 |       0.031 |      0.006 |
+| Vccaux    |       1.800 |     0.066 |       0.055 |      0.011 |
+| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -156,8 +156,8 @@ Table of Contents
 +-----------------------------------------------------+-----------+
 | Name                                                | Power (W) |
 +-----------------------------------------------------+-----------+
-| E300ArtyDevKitFPGAChip                              |     0.148 |
-|   E300ArtyDevKitPlatform                            |     0.032 |
+| E300ArtyDevKitFPGAChip                              |     0.147 |
+|   E300ArtyDevKitPlatform                            |     0.029 |
 |     ResetCatchAndSync_d20                           |    <0.001 |
 |       AsyncResetSynchronizerShiftReg_w1_d20_i0      |    <0.001 |
 |         sync_0                                      |    <0.001 |
@@ -204,8 +204,8 @@ Table of Contents
 |     spi_dq_1_sync                                   |    <0.001 |
 |     spi_dq_2_sync                                   |    <0.001 |
 |     spi_dq_3_sync                                   |    <0.001 |
-|     sys                                             |     0.032 |
-|       aon_1                                         |     0.001 |
+|     sys                                             |     0.029 |
+|       aon_1                                         |    <0.001 |
 |         ResetCatchAndSync_d3                        |    <0.001 |
 |           AsyncResetSynchronizerShiftReg_w1_d3_i0   |    <0.001 |
 |             sync_0                                  |    <0.001 |
@@ -214,20 +214,20 @@ Table of Contents
 |               reg_0                                 |    <0.001 |
 |             sync_2                                  |    <0.001 |
 |               reg_0                                 |    <0.001 |
-|         aon                                         |     0.001 |
+|         aon                                         |    <0.001 |
 |           Queue                                     |    <0.001 |
 |           pmu                                       |    <0.001 |
 |             AsyncResetRegVec_w5_i0                  |    <0.001 |
 |               reg_3                                 |    <0.001 |
 |             SRLatch_1                               |     0.000 |
-|             SRLatch_2                               |    <0.001 |
+|             SRLatch_2                               |     0.000 |
 |             core                                    |    <0.001 |
 |           rtc                                       |    <0.001 |
 |             AsyncResetRegVec_w1_i0                  |    <0.001 |
 |               reg_0                                 |    <0.001 |
 |           wdog                                      |    <0.001 |
-|             AsyncResetRegVec_w1_i0                  |    <0.001 |
-|               reg_0                                 |    <0.001 |
+|             AsyncResetRegVec_w1_i0                  |     0.000 |
+|               reg_0                                 |     0.000 |
 |             AsyncResetRegVec_w1_i0_1                |    <0.001 |
 |               reg_0                                 |    <0.001 |
 |             AsyncResetRegVec_w1_i0_2                |    <0.001 |
@@ -236,28 +236,28 @@ Table of Contents
 |               reg_0                                 |    <0.001 |
 |             AsyncResetRegVec_w1_i0_4                |    <0.001 |
 |               reg_0                                 |    <0.001 |
-|         aonrst_catch                                |    <0.001 |
-|           AsyncResetSynchronizerShiftReg_w1_d3_i0   |    <0.001 |
-|             sync_0                                  |    <0.001 |
-|               reg_0                                 |    <0.001 |
-|             sync_1                                  |    <0.001 |
-|               reg_0                                 |    <0.001 |
-|             sync_2                                  |    <0.001 |
-|               reg_0                                 |    <0.001 |
+|         aonrst_catch                                |     0.000 |
+|           AsyncResetSynchronizerShiftReg_w1_d3_i0   |     0.000 |
+|             sync_0                                  |     0.000 |
+|               reg_0                                 |     0.000 |
+|             sync_1                                  |     0.000 |
+|               reg_0                                 |     0.000 |
+|             sync_2                                  |     0.000 |
+|               reg_0                                 |     0.000 |
 |         crossing                                    |    <0.001 |
 |           AsyncQueueSink                            |    <0.001 |
-|             deq_bits_reg                            |    <0.001 |
-|             ridx_bin                                |    <0.001 |
-|               reg_0                                 |    <0.001 |
+|             deq_bits_reg                            |     0.000 |
+|             ridx_bin                                |     0.000 |
+|               reg_0                                 |     0.000 |
 |             valid_reg                               |    <0.001 |
 |               reg_0                                 |    <0.001 |
 |             widx_gray                               |    <0.001 |
 |               sync_0                                |    <0.001 |
 |                 reg_0                               |    <0.001 |
-|               sync_1                                |    <0.001 |
-|                 reg_0                               |    <0.001 |
-|               sync_2                                |    <0.001 |
-|                 reg_0                               |    <0.001 |
+|               sync_1                                |     0.000 |
+|                 reg_0                               |     0.000 |
+|               sync_2                                |     0.000 |
+|                 reg_0                               |     0.000 |
 |           AsyncQueueSource                          |    <0.001 |
 |             AsyncValidSync                          |    <0.001 |
 |               source_valid                          |    <0.001 |
@@ -283,15 +283,15 @@ Table of Contents
 |                   reg_0                             |    <0.001 |
 |             ready_reg                               |    <0.001 |
 |               reg_0                                 |    <0.001 |
-|             ridx_gray                               |    <0.001 |
-|               sync_0                                |    <0.001 |
-|                 reg_0                               |    <0.001 |
-|               sync_1                                |    <0.001 |
-|                 reg_0                               |    <0.001 |
-|               sync_2                                |    <0.001 |
-|                 reg_0                               |    <0.001 |
-|             widx_bin                                |    <0.001 |
-|               reg_0                                 |    <0.001 |
+|             ridx_gray                               |     0.000 |
+|               sync_0                                |     0.000 |
+|                 reg_0                               |     0.000 |
+|               sync_1                                |     0.000 |
+|                 reg_0                               |     0.000 |
+|               sync_2                                |     0.000 |
+|                 reg_0                               |     0.000 |
+|             widx_bin                                |     0.000 |
+|               reg_0                                 |     0.000 |
 |         dwakeup_deglitch                            |     0.000 |
 |       asyncXing                                     |    <0.001 |
 |         SynchronizerShiftReg_w1_d3                  |    <0.001 |
@@ -314,8 +314,8 @@ Table of Contents
 |       asyncXing_9                                   |    <0.001 |
 |         SynchronizerShiftReg_w1_d3                  |    <0.001 |
 |       clint                                         |    <0.001 |
-|       debug_1                                       |     0.001 |
-|         dmInner                                     |     0.001 |
+|       debug_1                                       |    <0.001 |
+|         dmInner                                     |    <0.001 |
 |           AsyncQueueSink                            |    <0.001 |
 |             deq_bits_reg                            |    <0.001 |
 |             ridx_bin                                |    <0.001 |
@@ -329,7 +329,7 @@ Table of Contents
 |                 reg_0                               |    <0.001 |
 |               sync_2                                |    <0.001 |
 |                 reg_0                               |    <0.001 |
-|           dmInner                                   |     0.001 |
+|           dmInner                                   |    <0.001 |
 |           dmactiveSync                              |    <0.001 |
 |             AsyncResetSynchronizerShiftReg_w1_d3_i0 |    <0.001 |
 |               sync_0                                |    <0.001 |
@@ -670,9 +670,10 @@ Table of Contents
 |         AsyncResetRegVec_w1_i0                      |    <0.001 |
 |           reg_0                                     |    <0.001 |
 |       maskROM                                       |    <0.001 |
-|       pbus                                          |     0.003 |
+|         rom                                         |    <0.001 |
+|       pbus                                          |     0.002 |
 |         atomics                                     |    <0.001 |
-|         buffer                                      |     0.001 |
+|         buffer                                      |    <0.001 |
 |           Queue                                     |    <0.001 |
 |             _T_35_address_reg_0_1_0_5               |    <0.001 |
 |             _T_35_address_reg_0_1_12_17             |    <0.001 |
@@ -872,8 +873,8 @@ Table of Contents
 |         mac                                         |    <0.001 |
 |           phy                                       |    <0.001 |
 |       rtc                                           |    <0.001 |
-|       sbus                                          |     0.002 |
-|         control_bus                                 |     0.002 |
+|       sbus                                          |     0.001 |
+|         control_bus                                 |     0.001 |
 |           atomics                                   |    <0.001 |
 |           buffer                                    |    <0.001 |
 |             Queue                                   |    <0.001 |
@@ -996,7 +997,7 @@ Table of Contents
 |             reg_0                                   |    <0.001 |
 |         mac                                         |    <0.001 |
 |           phy                                       |    <0.001 |
-|       tile                                          |     0.018 |
+|       tile                                          |     0.019 |
 |         buffer                                      |    <0.001 |
 |           Queue                                     |    <0.001 |
 |             _T_35_address_reg_0_1_0_5               |    <0.001 |
@@ -1057,7 +1058,7 @@ Table of Contents
 |             _T_35_opcode_reg_0_1_0_2                |    <0.001 |
 |             _T_35_size_reg_0_1_0_2                  |    <0.001 |
 |             _T_35_source_reg_0_1_0_0                |    <0.001 |
-|         core                                        |     0.005 |
+|         core                                        |     0.006 |
 |           _T_574_reg_r1_0_31_0_5                    |    <0.001 |
 |           _T_574_reg_r1_0_31_12_17                  |    <0.001 |
 |           _T_574_reg_r1_0_31_18_23                  |    <0.001 |
@@ -1071,11 +1072,11 @@ Table of Contents
 |           _T_574_reg_r2_0_31_30_31                  |    <0.001 |
 |           _T_574_reg_r2_0_31_6_11                   |    <0.001 |
 |           addu                                      |    <0.001 |
-|           csr                                       |     0.001 |
+|           csr                                       |     0.002 |
 |           div                                       |     0.002 |
 |           ibuf                                      |    <0.001 |
 |         dcache                                      |     0.003 |
-|           data                                      |     0.003 |
+|           data                                      |     0.002 |
 |           tlb                                       |    <0.001 |
 |             pmp                                     |    <0.001 |
 |         dcacheArb                                   |    <0.001 |

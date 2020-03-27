@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Fri Mar 27 16:11:42 2020
+| Date         : Fri Mar 27 17:23:32 2020
 | Host         : rv running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_drc -file E300ArtyDevKitFPGAChip_drc_opted.rpt -pb E300ArtyDevKitFPGAChip_drc_opted.pb -rpx E300ArtyDevKitFPGAChip_drc_opted.rpx
 | Design       : E300ArtyDevKitFPGAChip
@@ -135,7 +135,7 @@ Related violations: <none>
 
 IOSR-1#1 Warning
 IOB set reset sharing  
-IO jd_4 connects to flops which have these E300ArtyDevKitPlatform/sys/dtm/JtagTapController/stateMachine/currStateReg/reg_0/irChain_io_chainIn_capture, E300ArtyDevKitPlatform/sys/dtm/JtagTapController/stateMachine/currStateReg/reg_3/idcodeChain_io_chainIn_capture set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+IO jd_4 connects to flops which have these E300ArtyDevKitPlatform/sys/dtm/JtagTapController/stateMachine/currStateReg/reg_0/idcodeChain_io_chainIn_capture, E300ArtyDevKitPlatform/sys/dtm/JtagTapController/stateMachine/currStateReg/reg_0/irChain_io_chainIn_capture set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
 Related violations: <none>
 
 PLIO-8#1 Warning

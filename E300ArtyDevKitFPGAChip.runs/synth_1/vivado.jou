@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Mar 27 16:04:37 2020
-# Process ID: 12555
+# Start of session at: Fri Mar 27 17:15:36 2020
+# Process ID: 25503
 # Current directory: /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.runs/synth_1
 # Command line: vivado -log E300ArtyDevKitFPGAChip.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source E300ArtyDevKitFPGAChip.tcl
 # Log file: /home/rv/riscv/e300artydevkit/E300ArtyDevKitFPGAChip.runs/synth_1/E300ArtyDevKitFPGAChip.vds

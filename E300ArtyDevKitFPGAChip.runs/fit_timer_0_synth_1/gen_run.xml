@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="fit_timer_0_synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1585209912">
-  <File Type="VDS-TIMING-PB" Name="fit_timer_0_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="fit_timer_0_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="fit_timer_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="fit_timer_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fit_timer_0.vds"/>
   <File Type="RDS-DCP" Name="fit_timer_0.dcp"/>
   <File Type="RDS-UTIL-PB" Name="fit_timer_0_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="fit_timer_0_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="fit_timer_0_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="fit_timer_0.vds"/>
-  <File Type="REPORTS-TCL" Name="fit_timer_0_reports.tcl"/>
-  <File Type="PA-TCL" Name="fit_timer_0.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fit_timer_0">
     <File Path="$PSRCDIR/sources_1/ip/fit_timer_0/fit_timer_0.xci">
       <FileInfo>
